@@ -50,8 +50,10 @@
 }
 .option li{
   list-style: none;
-  color: white;
+  /* color: white; */
   font-size: 60px;
+  /* width: 50px; */
+  font-weight:100;
   /* font-weight: 500; */
   position: relative;
   top: 0;
@@ -67,8 +69,8 @@
 }
 .option li span{
   position: relative;
-  margin: 5px 0;
-  line-height: 90px;
+  /* margin: 5px 0; */
+  /* line-height: 90px; */
 }
 .option li span:after{
   content: '';
@@ -85,7 +87,7 @@ animation: typing 3s steps(10) infinite;
 @keyframes typing 
 {
   40%, 60%{
-    left: calc(100% + 30px);
+    left: calc(100% + 60px);
   }
   100%
   {
@@ -171,7 +173,7 @@ animation: typing 3s steps(10) infinite;
         <div class="main">
           <!-- <div class="text"> I'm a</div> -->
             <ul class="option">
-              <li><span style="color:aliceblue">Programmer</span></li>
+              <li><span style="color:aliceblue;">Programmer</span></li>
               <li><span style="color:aqua">Librarian</span></li>
               <li><span style="color:blue">Educator</span></li>
               <li><span style="color:black">Book Lover</span></li>

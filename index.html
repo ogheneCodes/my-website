@@ -32,6 +32,67 @@
         text-decoration: none;
         color: red;
       }
+      .main
+{
+  display: flex;
+}
+.main .text
+{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.main .option{
+  margin-left: 15px;
+  height: 90px;
+  overflow: hidden;
+  /* line-height: 90px; */
+}
+.option li{
+  list-style: none;
+  color: white;
+  font-size: 60px;
+  /* font-weight: 500; */
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+  
+}
+@keyframes slide
+{
+  100%
+  {
+    top: -360px;
+  }
+}
+.option li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.option li span:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: #111; */
+  border-left: 2px solid white;
+  
+animation: typing 3s steps(10) infinite;
+  
+}
+@keyframes typing 
+{
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%
+  {
+    left: 0;
+  }
+}
+
     </style>
     <link rel="stylesheet" href="css/heading.css" />
     <link rel="stylesheet" href="css/body.css" />
@@ -104,9 +165,18 @@
           <div class="divider-custom-line"></div>
         </div>
         <!-- Masthead Subheading-->
-        <p class="pre-wrap masthead-subheading font-weight-light mb-0">
+        <!-- <p class="pre-wrap masthead-subheading font-weight-light mb-0">
           JavaScript Developer - Web Designer
-        </p>
+        </p> -->
+        <div class="main">
+          <!-- <div class="text"> I'm a</div> -->
+            <ul class="option">
+              <li><span style="color:aliceblue">Programmer</span></li>
+              <li><span style="color:aqua">Librarian</span></li>
+              <li><span style="color:blue">Educator</span></li>
+              <li><span style="color:black">Book Lover</span></li>
+            </ul>
+        </div>
       </div>
     </header>
     <section class="page-section portfolio" id="portfolio">
@@ -628,7 +698,7 @@
               <div class="icon-contact mb-3">
                 <i class="fas fa-mobile-alt"></i>
               </div>
-              <div class="text-muted">Phone</div>
+              <div class="text-muted">Phone &#128222;</div>
               <div class="lead font-weight-bold">
                 <a href="tel:+2348167196516">(+234) 8167196516</a>
               </div>
@@ -639,7 +709,7 @@
               <div class="icon-contact mb-3">
                 <i class="far fa-envelope"></i>
               </div>
-              <div class="text-muted">Email</div>
+              <div class="text-muted">Email &#128231;</div>
               <a
                 class="lead font-weight-bold"
                 href="mailto:ebobomaxwwell25@gmail.com"
